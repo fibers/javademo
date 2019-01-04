@@ -1,5 +1,9 @@
+.DS_Store
 *.iml
 .idea/
+.git/
+.mvn/
+target
 
 # Compiled class file
 *.class
