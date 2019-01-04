@@ -1,0 +1,33 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: admin-server
+
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    service-url:
+#      defaultZone: http://localhost:8102/eureka/
+#
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    health-check-url-path: /actuator/health
+#    metadata-map:
+#      startup: ${random.int}
+#  client:
+#    registryFetchIntervalSeconds: 5
+#    serviceUrl:
+#      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
+#
+#
+#eureka.client.eureka-service-url-poll-interval-seconds: 60
+#eureka.client.use-dns-for-fetching-service-urls: true
+#eureka.client.eureka-server-d-n-s-name: eureka.com
+#eureka.client.eureka-server-u-r-l-context: eureka
+#eureka.client.eureka-server-port: 8080
+#eureka.client.prefer-same-zone-eureka: true
+#eureka.client.region: global
+

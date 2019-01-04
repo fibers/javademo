@@ -1,0 +1,22 @@
+server:
+  port: 8401
+
+spring:
+  application:
+    name: zuul-server
+  boot:
+    admin:
+      client:
+        url: http://localhost:8101
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:"*"
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8102/eureka/
