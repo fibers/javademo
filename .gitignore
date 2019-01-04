@@ -3,7 +3,6 @@
 .idea/
 .git/
 .mvn/
-target
 
 # Compiled class file
 *.class
