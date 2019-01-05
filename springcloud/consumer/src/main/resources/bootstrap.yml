@@ -4,16 +4,3 @@ spring:
   cloud:
     config:
       uri: http://localhost:8100
-
-
-#spring:
-#  cloud:
-#    config:
-#      allow-override: true
-#      override-none: false
-#      override-system-properties: false
-#
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8102/eureka/
