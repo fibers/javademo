@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 
 @FeignClient("service-add-subtract")
-public interface AddSubtractService {
+public interface IAddSubtractService {
     @RequestMapping(method = RequestMethod.GET, value = "/add")
     Float add(@RequestParam(value = "a") Float a, @RequestParam(value = "b") Float b);
 

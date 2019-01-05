@@ -22,7 +22,7 @@
     </modules>
 
     <properties>
-        <sping-boot-admin.version>2.1.1</sping-boot-admin.version>
+        <sping-boot-admin.version>2.0.2</sping-boot-admin.version>
     </properties>
 
     <dependencies>
@@ -57,7 +57,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-parent</artifactId>
-                <version>2.1.1.RELEASE</version>
+                <version>2.0.2.RELEASE</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>

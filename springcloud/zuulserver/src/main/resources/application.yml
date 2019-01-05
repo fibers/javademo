@@ -1,9 +1,19 @@
 server:
   port: 8401
 
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    health-check-url-path: /actuator/health
+    metadata-map:
+      startup: ${random.int}
+  client:
+    registry-fetch-interval-seconds: 5
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8102}/eureka/
+
 spring:
-  application:
-    name: zuul-server
   boot:
     admin:
       client:
@@ -13,10 +23,8 @@ management:
   endpoints:
     web:
       exposure:
-        include:"*"
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
 
-eureka:
-  client:
-    register-with-eureka: false
-    service-url:
-      defaultZone: http://localhost:8102/eureka/

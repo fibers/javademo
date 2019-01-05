@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients
+@EnableFeignClients(basePackages = {"com.fibers.demo.springcloud.client"})
 @EnableCircuitBreaker
 public class ConsumerApplication {
 
