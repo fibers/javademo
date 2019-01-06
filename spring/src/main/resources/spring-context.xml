@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="contact" class="com.fibers.demo.spring.model.Contact">
+        <property name="cellphone" value="13811424604"/>
+        <property name="email" value="yu8582@126.com"/>
+    </bean>
+
+    <bean id="user" class="com.fibers.demo.spring.model.User">
+        <constructor-arg name="name" value="shengyuhong"/>
+        <constructor-arg name="age" value="26"/>
+        <constructor-arg name="contact" ref="contact"/>
+    </bean>
+
+</beans>
