@@ -1,7 +1,7 @@
 package com.fibers.demo.spring.bean;
 
-import com.fibers.demo.spring.bean.config.AnimalConfig;
-import com.fibers.demo.spring.bean.model.IAnimal;
+import com.fibers.demo.spring.config.GlobalConfig;
+import com.fibers.demo.spring.iface.IAnimal;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
@@ -10,12 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = AnimalConfig.class)
-public class AnimalTest {
+@ContextConfiguration(classes = GlobalConfig.class)
+public class ConfigTest {
 
     @Rule
     public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
@@ -23,10 +24,13 @@ public class AnimalTest {
     @Autowired
     private IAnimal animal;
 
+    @Autowired
+    private User user;
+
     @Test
-    public void testAnimalNotNull() {
+    public void testNotNull() {
         assertNotNull(animal);
-        System.out.println(animal);
+        assertNotNull(user);
     }
 
     @Test
@@ -35,5 +39,15 @@ public class AnimalTest {
         assertEquals("Tiger is running",
                 systemOutRule.getLog()
         );
+    }
+
+    @Test
+    public void testUserName() {
+        assertEquals(user.getName(), "shengyuhong");
+    }
+
+    @Test
+    public void testUserContact() {
+        assertEquals(user.getContact().getEmail(), "yu8582@126.com");
     }
 }

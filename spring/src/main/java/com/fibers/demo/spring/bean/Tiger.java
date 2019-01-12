@@ -1,5 +1,6 @@
-package com.fibers.demo.spring.bean.model;
+package com.fibers.demo.spring.bean;
 
+import com.fibers.demo.spring.iface.IAnimal;
 import org.springframework.stereotype.Component;
 
 @Component
