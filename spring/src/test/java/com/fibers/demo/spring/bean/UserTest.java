@@ -1,6 +1,6 @@
-package com.fibers.demo.spring;
+package com.fibers.demo.spring.bean;
 
-import com.fibers.demo.spring.model.User;
+import com.fibers.demo.spring.bean.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

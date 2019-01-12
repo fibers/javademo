@@ -1,4 +1,4 @@
-package com.fibers.demo.spring.model;
+package com.fibers.demo.spring.bean.model;
 
 import org.springframework.stereotype.Component;
 

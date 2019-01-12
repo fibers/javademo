@@ -1,4 +1,4 @@
-package com.fibers.demo.spring;
+package com.fibers.demo.spring.bean;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

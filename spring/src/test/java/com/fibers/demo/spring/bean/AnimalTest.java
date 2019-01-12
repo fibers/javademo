@@ -1,8 +1,7 @@
-package com.fibers.demo.spring;
+package com.fibers.demo.spring.bean;
 
-import com.fibers.demo.spring.config.AnimalConfig;
-import com.fibers.demo.spring.model.IAnimal;
-import org.junit.Assert;
+import com.fibers.demo.spring.bean.config.AnimalConfig;
+import com.fibers.demo.spring.bean.model.IAnimal;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;

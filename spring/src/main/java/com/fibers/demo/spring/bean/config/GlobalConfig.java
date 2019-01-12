@@ -1,4 +1,4 @@
-package com.fibers.demo.spring.config;
+package com.fibers.demo.spring.bean.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
