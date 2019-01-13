@@ -32,12 +32,12 @@ public class AspectConfig {
     }
 
     @Bean
-    public ExtensionIntroducer extensionIntroducer(){
+    public ExtensionIntroducer extensionIntroducer() {
         return new ExtensionIntroducer();
     }
 
     @Bean
-    public Extension extension(){
+    public Extension extension() {
         return new CleanExtension();
     }
 

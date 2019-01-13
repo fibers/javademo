@@ -31,7 +31,6 @@ public class TestMain {
         capabilities.setCapability("useNewWDA", true);
 
 
-
         driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
         System.out.println(driver.getPageSource());

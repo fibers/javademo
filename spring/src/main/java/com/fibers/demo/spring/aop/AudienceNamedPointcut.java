@@ -13,12 +13,12 @@ public class AudienceNamedPointcut {
 
     @Around("performance()")
     public void watchPerformance(ProceedingJoinPoint pjp) {
-        try{
+        try {
             System.out.println("Silencing cell phones");
             System.out.println("Taking seats");
             pjp.proceed();
             System.out.println("CLAP CLAP CLAP");
-        }catch(Throwable e){
+        } catch (Throwable e) {
             System.out.println("Demanding a refund");
         }
     }

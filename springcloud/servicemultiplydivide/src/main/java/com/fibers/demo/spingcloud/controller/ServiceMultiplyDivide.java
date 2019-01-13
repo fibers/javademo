@@ -9,14 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
-
 /**
  * Created by fibers on 2017/6/23.
  */
 @RestController
 public class ServiceMultiplyDivide implements IServiceMultiplyDivide {
 
-    public final static Logger log = LoggerFactory.getLogger(ServiceMultiplyDivide.class);
+    private final static Logger log = LoggerFactory.getLogger(ServiceMultiplyDivide.class);
 
     @RequestMapping("/multiply")
     public Float multiply(@RequestParam Float a, @RequestParam Float b) {

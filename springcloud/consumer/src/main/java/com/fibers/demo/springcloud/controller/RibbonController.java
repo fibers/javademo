@@ -1,7 +1,6 @@
 package com.fibers.demo.springcloud.controller;
 
 
-
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +19,13 @@ public class RibbonController {
 
     private final static Logger log = LoggerFactory.getLogger(RibbonController.class);
 
-    @Autowired
+
     private RestTemplate restTemplate;
+
+    @Autowired
+    public void setRestTemplate(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 
     @HystrixCommand(fallbackMethod = "computeServiceFallback")
     @GetMapping("/ribbon/{a}/{b}/{c}")
@@ -40,7 +44,7 @@ public class RibbonController {
         return result;
     }
 
-    public String computeServiceFallback(){
-        return "ERROR";
+    public Float computeServiceFallback(Float a, Float b, Float c) {
+        return 0.0f;
     }
 }

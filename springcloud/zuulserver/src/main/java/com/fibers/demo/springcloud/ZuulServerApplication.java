@@ -11,16 +11,16 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableZuulProxy
 public class ZuulServerApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ZuulServerApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ZuulServerApplication.class, args);
+    }
 
-	@Configuration
-	public class SecurityPermitAllConfig extends WebSecurityConfigurerAdapter {
-		@Override
-		protected void configure(HttpSecurity http) throws Exception {
-			http.authorizeRequests().anyRequest().permitAll()
-					.and().csrf().disable();
-		}
-	}
+    @Configuration
+    public class SecurityPermitAllConfig extends WebSecurityConfigurerAdapter {
+        @Override
+        protected void configure(HttpSecurity http) throws Exception {
+            http.authorizeRequests().anyRequest().permitAll()
+                    .and().csrf().disable();
+        }
+    }
 }
