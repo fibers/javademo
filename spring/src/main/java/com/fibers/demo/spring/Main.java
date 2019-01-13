@@ -1,7 +1,8 @@
 package com.fibers.demo.spring;
 
 import com.fibers.demo.spring.config.GlobalConfig;
-import com.fibers.demo.spring.iface.IPerformance;
+import com.fibers.demo.spring.iface.Extension;
+import com.fibers.demo.spring.iface.Performance;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -12,7 +13,9 @@ public class Main {
         System.out.println(acXML.getBean("user"));
 
         ApplicationContext acConfig = new AnnotationConfigApplicationContext(GlobalConfig.class);
-        IPerformance performance = (IPerformance)acConfig.getBean("singing");
-        performance.perform();
+        Performance performance = (Performance)acConfig.getBean("singing");
+        performance.perform_parameterPointcut("hello world");
+
+        ((Extension)performance).extension();
     }
 }

@@ -1,10 +1,7 @@
-package com.fibers.demo.spring.bean;
+package com.fibers.demo.spring;
 
-import com.fibers.demo.spring.config.GlobalConfig;
-import com.fibers.demo.spring.iface.IAnimal;
-import org.junit.Rule;
+import com.fibers.demo.spring.bean.User;
 import org.junit.Test;
-import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -15,30 +12,15 @@ import static org.junit.Assert.assertNotNull;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = GlobalConfig.class)
-public class ConfigTest {
-
-    @Rule
-    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
-
-    @Autowired
-    private IAnimal animal;
+@ContextConfiguration(locations = {"classpath:spring-context.xml"})
+public class XMLTest {
 
     @Autowired
     private User user;
 
     @Test
-    public void testNotNull() {
-        assertNotNull(animal);
+    public void testUserNotNull() {
         assertNotNull(user);
-    }
-
-    @Test
-    public void testAnimalRun() {
-        animal.run();
-        assertEquals("Tiger is running",
-                systemOutRule.getLog()
-        );
     }
 
     @Test

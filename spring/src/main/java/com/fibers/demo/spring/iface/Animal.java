@@ -1,5 +1,5 @@
 package com.fibers.demo.spring.iface;
 
-public interface IAnimal {
+public interface Animal {
     void run();
 }
