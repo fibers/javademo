@@ -13,9 +13,9 @@ public class Main {
         System.out.println(acXML.getBean("user"));
 
         ApplicationContext acConfig = new AnnotationConfigApplicationContext(GlobalConfig.class);
-        Performance performance = (Performance)acConfig.getBean("singing");
+        Performance performance = (Performance) acConfig.getBean("singing");
         performance.perform_parameterPointcut("hello world");
 
-        ((Extension)performance).extension();
+        ((Extension) performance).extension();
     }
 }
