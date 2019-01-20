@@ -2,7 +2,7 @@ package com.fibers.demo.spring;
 
 import com.fibers.demo.spring.bean.User;
 import com.fibers.demo.spring.config.GlobalConfig;
-import com.fibers.demo.spring.iface.Animal;
+import com.fibers.demo.spring.bean.Animal;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;

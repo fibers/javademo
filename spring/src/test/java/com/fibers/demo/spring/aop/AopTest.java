@@ -1,8 +1,6 @@
-package com.fibers.demo.spring;
+package com.fibers.demo.spring.aop;
 
 import com.fibers.demo.spring.config.GlobalConfig;
-import com.fibers.demo.spring.iface.Extension;
-import com.fibers.demo.spring.iface.Performance;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;

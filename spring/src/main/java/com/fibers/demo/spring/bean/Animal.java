@@ -1,4 +1,4 @@
-package com.fibers.demo.spring.iface;
+package com.fibers.demo.spring.bean;
 
 public interface Animal {
     void run();

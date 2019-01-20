@@ -1,6 +1,6 @@
-package com.fibers.demo.spring.bean;
+package com.fibers.demo.spring.aop;
 
-import com.fibers.demo.spring.iface.Performance;
+import com.fibers.demo.spring.aop.Performance;
 
 public class Singing implements Performance {
 

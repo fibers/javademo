@@ -5,7 +5,7 @@ import org.aspectj.lang.annotation.*;
 
 @Aspect
 public class AudiencePointcut {
-    @Pointcut("execution(* com.fibers.demo.spring.iface.Performance.perform_pointcut(..))")
+    @Pointcut("execution(* com.fibers.demo.spring.aop.Performance.perform_pointcut(..))")
     public void performance() {
     }
 

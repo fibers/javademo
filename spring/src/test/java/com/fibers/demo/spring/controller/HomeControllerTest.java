@@ -1,6 +1,5 @@
-package com.fibers.demo.spring;
+package com.fibers.demo.spring.controller;
 
-import com.fibers.demo.spring.controller.HomeController;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -16,5 +15,8 @@ public class HomeControllerTest {
         MockMvc mockMvc = standaloneSetup(controller).build();
 
         mockMvc.perform(get("/")).andExpect(view().name("home"));
+        mockMvc.perform((get("/homepage"))).andExpect(view().name("home"));
     }
+
+
 }

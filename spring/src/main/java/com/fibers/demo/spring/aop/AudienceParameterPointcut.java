@@ -9,7 +9,7 @@ import org.aspectj.lang.annotation.Pointcut;
 public class AudienceParameterPointcut {
 
     @Pointcut("execution(* " +
-            "com.fibers.demo.spring.iface.Performance.perform_parameterPointcut(String))" +
+            "com.fibers.demo.spring.aop.Performance.perform_parameterPointcut(String))" +
             " && args(what)")
     public void performance(String what) {
     }

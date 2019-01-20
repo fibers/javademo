@@ -1,8 +1,8 @@
 package com.fibers.demo.spring;
 
 import com.fibers.demo.spring.config.GlobalConfig;
-import com.fibers.demo.spring.iface.Extension;
-import com.fibers.demo.spring.iface.Performance;
+import com.fibers.demo.spring.aop.Extension;
+import com.fibers.demo.spring.aop.Performance;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
