@@ -1,6 +1,6 @@
 package com.fibers.demo.spring.controller;
 
-import com.fibers.demo.spring.model.Spitter;
+import com.fibers.demo.spring.pojo.model.Spitter;
 import com.fibers.demo.spring.repository.SpitterRepository;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,8 @@
-package com.fibers.demo.spring.aop;
+package com.fibers.demo.spring.pojo.aop;
 
-import com.fibers.demo.spring.aop.Performance;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Singing implements Performance {
 
     @Override

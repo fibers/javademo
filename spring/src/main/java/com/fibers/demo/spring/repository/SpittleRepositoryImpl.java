@@ -1,6 +1,6 @@
 package com.fibers.demo.spring.repository;
 
-import com.fibers.demo.spring.model.Spittle;
+import com.fibers.demo.spring.pojo.model.Spittle;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

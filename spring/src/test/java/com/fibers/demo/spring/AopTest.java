@@ -1,6 +1,8 @@
-package com.fibers.demo.spring.aop;
+package com.fibers.demo.spring;
 
 import com.fibers.demo.spring.config.GlobalConfig;
+import com.fibers.demo.spring.pojo.aop.Extension;
+import com.fibers.demo.spring.pojo.aop.Performance;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;

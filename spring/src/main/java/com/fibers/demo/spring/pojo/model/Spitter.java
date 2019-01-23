@@ -1,4 +1,4 @@
-package com.fibers.demo.spring.model;
+package com.fibers.demo.spring.pojo.model;
 
 
 import lombok.AllArgsConstructor;

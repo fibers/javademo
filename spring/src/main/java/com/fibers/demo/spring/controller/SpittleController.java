@@ -1,6 +1,6 @@
 package com.fibers.demo.spring.controller;
 
-import com.fibers.demo.spring.model.Spittle;
+import com.fibers.demo.spring.pojo.model.Spittle;
 import com.fibers.demo.spring.repository.SpittleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

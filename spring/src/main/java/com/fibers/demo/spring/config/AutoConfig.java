@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = {"com.fibers.demo.spring.bean"})
+@ComponentScan(basePackages = {"com.fibers.demo.spring.pojo"})
 public class AutoConfig {
 
 }

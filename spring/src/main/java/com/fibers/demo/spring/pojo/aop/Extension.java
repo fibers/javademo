@@ -1,4 +1,4 @@
-package com.fibers.demo.spring.aop;
+package com.fibers.demo.spring.pojo.aop;
 
 public interface Extension {
     void extension();

@@ -1,4 +1,4 @@
-package com.fibers.demo.spring.bean;
+package com.fibers.demo.spring.pojo.bean;
 
 
 import org.slf4j.Logger;
@@ -69,12 +69,12 @@ public class User implements BeanNameAware, BeanFactoryAware,
     }
 
     @Override
-    public void destroy() throws Exception {
+    public void destroy() {
 
     }
 
     @Override
-    public void afterPropertiesSet() throws Exception {
+    public void afterPropertiesSet() {
 
     }
 

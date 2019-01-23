@@ -1,12 +1,12 @@
 package com.fibers.demo.spring.config;
 
-import com.fibers.demo.spring.aop.AudienceNamedPointcut;
-import com.fibers.demo.spring.aop.AudienceParameterPointcut;
-import com.fibers.demo.spring.aop.AudiencePointcut;
-import com.fibers.demo.spring.aop.ExtensionIntroducer;
-import com.fibers.demo.spring.aop.CleanExtension;
-import com.fibers.demo.spring.aop.Singing;
-import com.fibers.demo.spring.aop.Extension;
+import com.fibers.demo.spring.pojo.aop.AudienceNamedPointcut;
+import com.fibers.demo.spring.pojo.aop.AudienceParameterPointcut;
+import com.fibers.demo.spring.pojo.aop.AudiencePointcut;
+import com.fibers.demo.spring.pojo.aop.ExtensionIntroducer;
+import com.fibers.demo.spring.pojo.aop.CleanExtension;
+import com.fibers.demo.spring.pojo.aop.Singing;
+import com.fibers.demo.spring.pojo.aop.Extension;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;

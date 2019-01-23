@@ -1,4 +1,4 @@
-package com.fibers.demo.spring.bean;
+package com.fibers.demo.spring.pojo.bean;
 
 public class Contact {
     private String email;

@@ -1,7 +1,7 @@
 package com.fibers.demo.spring.controller;
 
 import com.fibers.demo.spring.config.RootConfig;
-import com.fibers.demo.spring.model.Spittle;
+import com.fibers.demo.spring.pojo.model.Spittle;
 import com.fibers.demo.spring.repository.SpittleRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;

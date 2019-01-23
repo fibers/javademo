@@ -1,6 +1,6 @@
 package com.fibers.demo.spring.repository;
 
-import com.fibers.demo.spring.model.Spitter;
+import com.fibers.demo.spring.pojo.model.Spitter;
 
 public interface SpitterRepository {
 

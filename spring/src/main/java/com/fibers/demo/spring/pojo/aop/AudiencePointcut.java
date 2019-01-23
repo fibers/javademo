@@ -1,11 +1,11 @@
-package com.fibers.demo.spring.aop;
+package com.fibers.demo.spring.pojo.aop;
 
 
 import org.aspectj.lang.annotation.*;
 
 @Aspect
 public class AudiencePointcut {
-    @Pointcut("execution(* com.fibers.demo.spring.aop.Performance.perform_pointcut(..))")
+    @Pointcut("execution(* com.fibers.demo.spring.pojo.aop.Performance.perform_pointcut(..))")
     public void performance() {
     }
 
