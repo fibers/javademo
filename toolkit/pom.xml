@@ -20,7 +20,7 @@
             <version>2.1.0</version>
         </dependency>
 
-        <!--for appumn-->
+        <!--for appium-->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
